@@ -27,7 +27,7 @@ class Octocat extends Component {
         </a>
         <ul>
           <li>
-            #149:
+            {this.props.number}:
             <a href="https://octodex.github.com//terracottocat/">
               <strong>{this.props.name}</strong>
             </a>
@@ -94,7 +94,7 @@ class App extends Component {
 
           <main>
             <section>
-              <Octocat name="Terracottocat" />
+              <Octocat name="Terracottocat" number="#150" />
 
               <article>
                 <a href="https://octodex.github.com//octogatos/">
