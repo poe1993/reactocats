@@ -17,28 +17,28 @@ class Octocat extends Component {
   render() {
     return (
       <article>
-        <a href="https://octodex.github.com//terracottocat/">
+        <a href={this.props.ref}>
           <img
             src={this.props.image}
             width="400"
             height="400"
-            alt="Terracottocat"
+            alt={this.props.alt}
           />
         </a>
         <ul>
           <li>
             {this.props.number}:
-            <a href="https://octodex.github.com//terracottocat/">
+            <a href={this.props.ref}>
               <strong>{this.props.name}</strong>
             </a>
           </li>
           <li>
-            <a href="https://github.com/chubbmo">
+            <a href={this.props.uref}>
               <img
-                src="https://github.com/chubbmo.png"
+                src={this.props.creator}
                 width="24px"
                 height="24px"
-                alt="chubbmo"
+                alt={this.props.creatoralt}
               />
             </a>
           </li>
@@ -98,334 +98,132 @@ class App extends Component {
                 name="Terracottocat"
                 number="#150"
                 image="https://octodex.github.com//images/Terracottocat_Single.png"
+                ref="https://octodex.github.com//terracottocat/"
+                alt="Terracottocat"
+                uref="https://github.com/chubbmo"
+                creator="https://github.com/chubbmo.png"
+                creatoralt="chubbmo"
               />
               <Octocat
-                name="Boxertocat"
-                number="#151"
-                image="https://octodex.github.com//images/boxertocat_octodex.jpg"
+                name="Octogatos"
+                number="#148"
+                image="https://octodex.github.com//images/Octogatos.png"
+                ref="https://octodex.github.com//octogatos/"
+                alt="Octogatos"
+                uref="https://github.com/cameronfoxly"
+                creator="https://github.com/cameronfoxly.png"
+                creatoralt="cameronfoxly"
               />
-              <article>
-                <a href="https://octodex.github.com//octogatos/">
-                  <img
-                    src="https://octodex.github.com//images/Octogatos.png"
-                    width="400"
-                    height="400"
-                    alt="Octogatos"
-                  />
-                </a>
-                <ul>
-                  <li>
-                    #148:
-                    <a href="https://octodex.github.com//octogatos/">
-                      <strong>Octogatos</strong>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/cameronfoxly">
-                      <img
-                        src="https://github.com/cameronfoxly.png"
-                        width="24px"
-                        height="24px"
-                        alt="cameronfoxly"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </article>
 
-              <article>
-                <a href="https://octodex.github.com//sentrytocat/">
-                  <img
-                    src="https://octodex.github.com//images/Sentrytocat_octodex.jpg"
-                    width="400"
-                    height="400"
-                    alt="Sentrytocat"
-                  />
-                </a>
-                <ul>
-                  <li>
-                    #143:
-                    <a href="https://octodex.github.com//sentrytocat/">
-                      <strong>Sentrytocat</strong>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/cameronmcefee">
-                      <img
-                        src="https://github.com/cameronmcefee.png"
-                        width="24px"
-                        height="24px"
-                        alt="cameronfoxly"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </article>
+              <Octocat
+                name="Sentrytocat"
+                number="#143"
+                image="https://octodex.github.com//images/Sentrytocat_octodex.jpg"
+                ref="https://octodex.github.com//sentrytocat/"
+                alt="Sentrytocat"
+                uref="https://github.com/cameronmcefee"
+                creator="https://github.com/cameronmcefee.png"
+                creatoralt="cameronfoxly"
+              />
 
-              <article>
-                <a href="https://octodex.github.com//boxertocat/">
-                  <img
-                    src="https://octodex.github.com//images/boxertocat_octodex.jpg"
-                    width="400"
-                    height="400"
-                    alt="Boxertocat"
-                  />
-                </a>
-                <ul>
-                  <li>
-                    #141:
-                    <a href="https://octodex.github.com//boxertocat/">
-                      <strong>Boxertocat</strong>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/rubyjazzy">
-                      <img
-                        src="https://github.com/rubyjazzy.png"
-                        width="24px"
-                        height="24px"
-                        alt="rubyjazzy"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </article>
+              <Octocat
+                name="Boxertocat"
+                number="#141"
+                image="https://octodex.github.com//images/boxertocat_octodex.jpg"
+                ref="https://octodex.github.com//boxertocat/"
+                alt="Boxertocat"
+                uref="https://github.com/rubyjazzy"
+                creator="https://github.com/rubyjazzy.png"
+                creatoralt="rubyjazzy"
+              />
 
-              <article>
-                <a href="https://octodex.github.com//suftocat/">
-                  <img
-                    src="https://octodex.github.com//images/surftocat.png"
-                    width="400"
-                    height="400"
-                    alt="Surftocat"
-                  />
-                </a>
-                <ul>
-                  <li>
-                    #140:
-                    <a href="https://octodex.github.com//suftocat/">
-                      <strong>Surftocat</strong>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/jeejkang">
-                      <img
-                        src="https://github.com/jeejkang.png"
-                        width="24px"
-                        height="24px"
-                        alt="jeejkang"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </article>
+              <Octocat
+                name="Surftocat"
+                number="#140"
+                image="https://octodex.github.com//images/surftocat.png"
+                ref="https://octodex.github.com//suftocat/"
+                alt="Surftocat"
+                uref="https://github.com/jeejkang"
+                creator="https://github.com/jeejkang.png"
+                creatoralt="jeejkang"
+              />
 
-              <article>
-                <a href="https://octodex.github.com//scubatocat/">
-                  <img
-                    src="https://octodex.github.com//images/scubatocat.png"
-                    width="400"
-                    height="400"
-                    alt="Scubatocat"
-                  />
-                </a>
-                <ul>
-                  <li>
-                    #138:
-                    <a href="https://octodex.github.com//scubatocat/">
-                      <strong>Scubatocat</strong>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/cameronfoxly">
-                      <img
-                        src="https://github.com/cameronfoxly.png"
-                        width="24px"
-                        height="24px"
-                        alt="cameronfoxly"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </article>
+              <Octocat
+                name="Scubatocat"
+                number="#138"
+                image="https://octodex.github.com//images/scubatocat.png"
+                ref="https://octodex.github.com//scubatocat/"
+                alt="Scubatocat"
+                uref="https://github.com/cameronfoxly"
+                creator="https://github.com/cameronfoxly.png"
+                creatoralt="cameronfoxly"
+              />
 
-              <article>
-                <a href="https://octodex.github.com//dinotocat/">
-                  <img
-                    src="https://octodex.github.com//images/dinotocat.png"
-                    width="400"
-                    height="400"
-                    alt="Dinotocat"
-                  />
-                </a>
-                <ul>
-                  <li>
-                    #130:
-                    <a href="https://octodex.github.com//dinotocat/">
-                      <strong>Dinotocat</strong>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/kimestoesta">
-                      <img
-                        src="https://github.com/kimestoesta.png"
-                        width="24px"
-                        height="24px"
-                        alt="kimestoesta"
-                      />
-                    </a>
-                    <a href="https://github.com/heyhayhay">
-                      <img
-                        src="https://github.com/heyhayhay.png"
-                        width="24px"
-                        height="24px"
-                        alt="heyhayhay"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </article>
+              <Octocat
+                name="Dinotocat"
+                number="#130"
+                image="https://octodex.github.com//images/dinotocat.png"
+                ref="https://octodex.github.com//dinotocat/"
+                alt="Dinotocat"
+                uref="https://github.com/heyhayhay"
+                creator="https://github.com/heyhayhay.png"
+                creatoralt="heyhayhay"
+              />
 
-              <article>
-                <a href="https://octodex.github.com//hulatocat/">
-                  <img
-                    src="https://octodex.github.com//images/hula_loop_octodex03.gif"
-                    width="400"
-                    height="400"
-                    alt="Hulatocat"
-                  />
-                </a>
-                <ul>
-                  <li>
-                    #139:
-                    <a href="https://octodex.github.com//hulatocat/">
-                      <strong>Hulatocat</strong>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/heyhayhay">
-                      <img
-                        src="https://github.com/heyhayhay.png"
-                        width="24px"
-                        height="24px"
-                        alt="heyhayhay"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </article>
-              <article>
-                <a href="https://octodex.github.com//Maxtocat/">
-                  <img
-                    src="https://octodex.github.com//images/maxtocat.gif"
-                    width="400"
-                    height="400"
-                    alt="Maxtocat"
-                  />
-                </a>
-                <ul>
-                  <li>
-                    #109:
-                    <a href="https://octodex.github.com//maxtocat/">
-                      <strong>Maxtocat</strong>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/jeejkang">
-                      <img
-                        src="https://github.com/jeejkang.png"
-                        width="24px"
-                        height="24px"
-                        alt="jeejkang"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </article>
-              <article>
-                <a href="https://octodex.github.com//daftpunktocat-thomas/">
-                  <img
-                    src="https://octodex.github.com//images/daftpunktocat-thomas.gif"
-                    width="400"
-                    height="400"
-                    alt="Daftpunktocat-thomas"
-                  />
-                </a>
-                <ul>
-                  <li>
-                    #101:
-                    <a href="https://octodex.github.com//daftpunktocat-thomas/">
-                      <strong>Daftpunktocat-thomas</strong>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/jeejkang">
-                      <img
-                        src="https://github.com/jeejkang.png"
-                        width="24px"
-                        height="24px"
-                        alt="jeejkang"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </article>
-              <article>
-                <a href="https://octodex.github.com//daftpunktocat-guy/">
-                  <img
-                    src="https://octodex.github.com//images/daftpunktocat-guy.gif"
-                    width="400"
-                    height="400"
-                    alt="Daftpunktocat-guy"
-                  />
-                </a>
-                <ul>
-                  <li>
-                    #100:
-                    <a href="https://octodex.github.com//daftpunktocat-guy/">
-                      <strong>Daftpunktocat-guy</strong>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/jeejkang">
-                      <img
-                        src="https://github.com/jeejkang.png"
-                        width="24px"
-                        height="24px"
-                        alt="jeejkang"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </article>
-              <article>
-                <a href="https://octodex.github.com//nyantocat/">
-                  <img
-                    src="https://octodex.github.com//images/nyantocat.gif"
-                    width="400"
-                    height="400"
-                    alt="Nyantocat"
-                  />
-                </a>
-                <ul>
-                  <li>
-                    #46:
-                    <a href="https://octodex.github.com//nyantocat/">
-                      <strong>Nyantocat</strong>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/cameronmcefee">
-                      <img
-                        src="https://github.com/cameronmcefee.png"
-                        width="24px"
-                        height="24px"
-                        alt="cameronmcefee"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </article>
+              <Octocat
+                name="Hulatocat"
+                number="#139"
+                image="https://octodex.github.com//images/hula_loop_octodex03.gif"
+                ref="https://octodex.github.com//hulatocat/"
+                alt="Hulatocat"
+                uref="https://github.com/heyhayhay"
+                creator="https://github.com/heyhayhay.png"
+                creatoralt="heyhayhay"
+              />
+
+              <Octocat
+                name="Maxtocat"
+                number="#109"
+                image="https://octodex.github.com//images/maxtocat.gif"
+                ref="https://octodex.github.com//Maxtocat/"
+                alt="Maxtocat"
+                uref="https://github.com/jeejkang"
+                creator="https://github.com/jeejkang.png"
+                creatoralt="jeejkang"
+              />
+
+              <Octocat
+                name="Daftpunktocat-thomas"
+                number="#101"
+                image="https://octodex.github.com//images/daftpunktocat-thomas.gif"
+                ref="https://octodex.github.com//daftpunktocat-thomas/"
+                alt="Daftpunktocat-thomas"
+                uref="https://github.com/jeejkang"
+                creator="https://github.com/jeejkang.png"
+                creatoralt="jeejkang"
+              />
+
+              <Octocat
+                name="Daftpunktocat-guy"
+                number="#100"
+                image="https://octodex.github.com//images/daftpunktocat-guy.gif"
+                ref="https://octodex.github.com//daftpunktocat-guy/"
+                alt="Daftpunktocat-guy"
+                uref="https://github.com/jeejkang"
+                creator="https://github.com/jeejkang.png"
+                creatoralt="jeejkang"
+              />
+
+              <Octocat
+                name="Nyantocat"
+                number="#46"
+                image="https://octodex.github.com//images/nyantocat.gif"
+                ref="https://octodex.github.com//nyantocat/"
+                alt="cameronmcefee"
+                uref="https://github.com/cameronmcefee"
+                creator="https://github.com/cameronmcefee.png"
+                creatoralt="cameronmcefee"
+              />
             </section>
           </main>
           <footer>
