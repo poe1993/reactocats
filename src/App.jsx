@@ -19,7 +19,7 @@ class Octocat extends Component {
       <article>
         <a href="https://octodex.github.com//terracottocat/">
           <img
-            src="https://octodex.github.com//images/Terracottocat_Single.png"
+            src={this.props.image}
             width="400"
             height="400"
             alt="Terracottocat"
@@ -94,8 +94,16 @@ class App extends Component {
 
           <main>
             <section>
-              <Octocat name="Terracottocat" number="#150" />
-
+              <Octocat
+                name="Terracottocat"
+                number="#150"
+                image="https://octodex.github.com//images/Terracottocat_Single.png"
+              />
+              <Octocat
+                name="Boxertocat"
+                number="#151"
+                image="https://octodex.github.com//images/boxertocat_octodex.jpg"
+              />
               <article>
                 <a href="https://octodex.github.com//octogatos/">
                   <img
