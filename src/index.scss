@@ -23,6 +23,15 @@ headerBackground {
   left: 0;
   right: 0;
 }
+headerBackground {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0rem 0.5rem 1.25rem rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 
 header {
   max-width: 114.2857rem;
@@ -51,6 +60,12 @@ nav ul {
   list-style-type: none;
   padding: 0rem;
   margin: 0rem;
+}
+
+header nav ul div {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
 }
 
 nav li {

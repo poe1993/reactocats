@@ -1,97 +1,16 @@
 import React, { Component } from 'react'
-class PageHeader extends Component {
-  render() {
-    return (
-      <head lang="en">
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Octodex</title>
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="/screen.css" />
-      </head>
-    )
-  }
-}
+import { Footer } from './Footer'
+import { Header } from './Header'
+import { Octocat } from './Octocat'
+import { PageHeader } from './PageHeader'
 
-class Octocat extends Component {
-  render() {
-    return (
-      <article>
-        <a href={this.props.ref}>
-          <img
-            src={this.props.image}
-            width="400"
-            height="400"
-            alt={this.props.alt}
-          />
-        </a>
-        <ul>
-          <li>
-            {this.props.number}:
-            <a href={this.props.ref}>
-              <strong>{this.props.name}</strong>
-            </a>
-          </li>
-          <li>
-            <a href={this.props.uref}>
-              <img
-                src={this.props.creator}
-                width="24px"
-                height="24px"
-                alt={this.props.creatoralt}
-              />
-            </a>
-          </li>
-        </ul>
-      </article>
-    )
-  }
-}
 class App extends Component {
   render() {
     return (
       <html>
         <PageHeader />
         <body>
-          <div>
-            <header>
-              <nav>
-                <ul>
-                  <div>
-                    <li>
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
-                        alt="GithubLogo"
-                      />
-                    </li>
-                    <li>
-                      <strong ref="#">Octodex</strong>
-                    </li>
-                  </div>
-                  <li>
-                    <a href="#">Home</a>
-                  </li>
-                  <li>
-                    <a href="https://octodex.github.com/faq/">FAQ</a>
-                  </li>
-                </ul>
-              </nav>
-
-              <nav>
-                <ul>
-                  <li>
-                    <a href="https://twitter.com/githubdesign">
-                      Follow us on Twitter
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/">Back to GitHub.com</a>
-                  </li>
-                </ul>
-              </nav>
-            </header>
-          </div>
-
+          <Header />
           <main>
             <section>
               <Octocat
@@ -226,11 +145,7 @@ class App extends Component {
               />
             </section>
           </main>
-          <footer>
-            <div>
-              <div>© 2013 – 2020 GitHub, Inc. All rights reserved.</div>
-            </div>
-          </footer>
+          <Footer />
         </body>
       </html>
     )
