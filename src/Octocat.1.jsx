@@ -1,23 +1,24 @@
 import React, { Component } from 'react'
 
 export class Octocat extends Component {
+  componentDidMount() {
+    console.log(this.props.ref)
+  }
   render() {
     return (
       <article>
-        <div>
-          <a href={this.props.ref}>
-            <img
-              src={this.props.image}
-              width="400"
-              height="400"
-              alt={this.props.alt}
-            />
-          </a>
-        </div>
+        <a href={this.props.href}>
+          <img
+            src={this.props.image}
+            width="400"
+            height="400"
+            alt={this.props.alt}
+          />
+        </a>
         <ul>
           <li>
             {this.props.number}:
-            <a href={this.props.ref}>
+            <a href={this.props.href}>
               <h1>{this.props.name}</h1>
             </a>
           </li>
